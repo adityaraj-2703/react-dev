@@ -1,0 +1,33 @@
+*{
+    box-sizing: 12px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.game-board{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.game-board-cell{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;              
+    align-items: center;        
+    justify-content: center;    
+    font-size: 2rem;            
+    font-weight: bold;     
+    
+    
+}
+.game-board-cell:hover{
+    background-color: blue;
+}
+
