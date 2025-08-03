@@ -4,14 +4,20 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ToDoList from './components/toDoList/ToDoList.jsx'
 import CourseCatalogApp from './components/Course/CourseCatalogApp.jsx'
+import ToDoListClass from './components/toDoList/ToDoListClass.jsx';
+import GameBoard from './components/tictactoe/GameBoard.jsx'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    // <ToDoList/>
-    <CourseCatalogApp/>
+    <>
+    {/* // <ToDoList/>
+    // <CourseCatalogApp/>
+    // <ToDoListClass/> */}
+    <GameBoard/>
+    </>
 
   )
 }
