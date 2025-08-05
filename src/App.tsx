@@ -6,6 +6,7 @@ import ToDoList from './components/toDoList/ToDoList.jsx'
 import CourseCatalogApp from './components/Course/CourseCatalogApp.jsx'
 import ToDoListClass from './components/toDoList/ToDoListClass.jsx';
 import GameBoard from './components/tictactoe/GameBoard.jsx'
+import ToDoListContext from './components/toDoList/ToDoListContext.jsx';
 
 
 function App() {
@@ -13,10 +14,11 @@ function App() {
 
   return (
     <>
-    {/* // <ToDoList/>
-    // <CourseCatalogApp/>
-    // <ToDoListClass/> */}
-    <GameBoard/>
+    {/* <ToDoList/> */}
+    {/* <CourseCatalogApp/>
+    <ToDoListClass/>  */}
+    {/* <GameBoard/> */}
+    <ToDoListContext/>
     </>
 
   )
