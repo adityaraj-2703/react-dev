@@ -8,6 +8,8 @@ import ToDoListClass from './components/toDoList/ToDoListClass.jsx';
 import GameBoard from './components/tictactoe/GameBoard.jsx'
 import ToDoListContext from './components/toDoList/ToDoListContext.jsx';
 
+import ToDoListStore from './components/toDoList/ToDoListStore.jsx'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +20,7 @@ function App() {
     {/* <CourseCatalogApp/>
     <ToDoListClass/>  */}
     {/* <GameBoard/> */}
-    <ToDoListContext/>
+    <ToDoListStore/>
     </>
 
   )
