@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
 // Initial State
 const initialState = {
   pendingTasks: [],
@@ -15,7 +14,7 @@ function todoReducer(state=initialState, action) {
       return { ...state, inputValue: action.payload };
 
     case "ADD_TODO":
-      const newTask = { id: uuidv4(), title: action.payload };
+      const newTask = { title: action.payload };
       return {
         ...state,
         pendingTasks: [...state.pendingTasks, newTask],

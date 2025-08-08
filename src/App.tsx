@@ -9,6 +9,8 @@ import GameBoard from './components/tictactoe/GameBoard.jsx'
 import ToDoListContext from './components/toDoList/ToDoListContext.jsx';
 
 import ToDoListStore from './components/toDoList/ToDoListStore.jsx'
+import TodoListRTK from './components/toDoList/TodoListRTK.jsx';
+
 
 
 function App() {
@@ -20,7 +22,8 @@ function App() {
     {/* <CourseCatalogApp/>
     <ToDoListClass/>  */}
     {/* <GameBoard/> */}
-    <ToDoListStore/>
+    {/* <ToDoListStore/> */}
+    <TodoListRTK/>
     </>
 
   )

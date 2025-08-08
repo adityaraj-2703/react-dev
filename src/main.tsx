@@ -4,7 +4,8 @@ import './index.css'
 import App from './App.tsx'
 import { TodoProvider } from './context/ToDoContext.jsx';
 import { Provider } from 'react-redux';
-import store from './store/store.js';
+// import store from './store/store.js';
+import store from './store/rtkToDoListStore.js'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
