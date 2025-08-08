@@ -2,6 +2,7 @@ import React, { useContext, useRef, useEffect } from "react";
 import { TodoContext } from "../../context/ToDoContext.jsx";
 import "./TodoList.css";
 import { useDispatch, useSelector } from "react-redux";
+import { v4 as uuidv4 } from "uuid";
 
 const TodoListStore = () => {
 //   const { state, dispatch } = useContext(TodoContext);
@@ -39,7 +40,7 @@ const TodoListStore = () => {
           }
           placeholder="Enter new task"
         />
-        <button onClick={() => dispatch({ type: "ADD_TODO" , payload: inputValue })}>Submit</button>
+        <button onClick={() => dispatch({ type: "ADD_TODO" , id:uuidv4(), payload: inputValue })}>Submit</button>
       </div>
 
       <div className="lists">
