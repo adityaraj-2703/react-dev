@@ -10,7 +10,7 @@ import ToDoListContext from './components/toDoList/ToDoListContext.jsx';
 
 import ToDoListStore from './components/toDoList/ToDoListStore.jsx'
 import TodoListRTK from './components/toDoList/TodoListRTK.jsx';
-
+import GameBoardC4 from './components/connect4/GameBoardC4.jsx';
 
 
 function App() {
@@ -23,7 +23,8 @@ function App() {
     <ToDoListClass/>  */}
     {/* <GameBoard/> */}
     {/* <ToDoListStore/> */}
-    <TodoListRTK/>
+    {/* <TodoListRTK/> */}
+    <GameBoardC4/>
     </>
 
   )
