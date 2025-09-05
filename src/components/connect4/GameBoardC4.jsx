@@ -38,11 +38,10 @@ const GameBoardC4 = () => {
         }
         if (countx >= 4) {
             setWinner(currPlayer);
-            return;
         }
         //for horizontal
-        let county = 0;
-        let left = j;
+        let county = 1;
+        let left = j-1;
         while (left >= 0) {
             if (board[i][left]!==null && board[i][left] === color) {
                 county++;
@@ -52,7 +51,7 @@ const GameBoardC4 = () => {
             }
             left--;
         }
-        let right = j;
+        let right = j+1;
         while (right < 7) {
             if (board[i][right]!==null && board[i][right] === color) {
                 county++;
@@ -67,9 +66,9 @@ const GameBoardC4 = () => {
         }
 
         //for antidiag
-        let countadiag = 0;
-        let l = j;
-        let u = i;
+        let countadiag = 1;
+        let l = j-1;
+        let u = i-1;
         while (l >= 0 && u >= 0) {
             if (board[u][l]!==null && board[u][l] === color) {
                 countadiag++;
@@ -80,8 +79,8 @@ const GameBoardC4 = () => {
             u--;
             l--;
         }
-        let r = j;
-        let d = i;
+        let r = j+1;
+        let d = i+1;
         while (r < 7 && d < 6) {
             if (board[d][r]!==null && board[d][r] === color) {
                 countadiag++;
@@ -97,9 +96,9 @@ const GameBoardC4 = () => {
         }
 
         //for diagonal
-        let countdiag = 0;
-        l = j;
-        d = i;
+        let countdiag = 1;
+        l = j-1;
+        d = i+1;
         while (l >= 0 && d < 6) {
             if (board[d][l]!==null && board[d][l] === color) {
                 countdiag++;
@@ -110,8 +109,8 @@ const GameBoardC4 = () => {
             l--;
             d++;
         }
-        r = j;
-        u = i;
+        r = j+1;
+        u = i-1;
         while (r < 7 && u >= 0) {
             if (board[u][r]!==null && board[u][r] === color) {
                 countdiag++;
