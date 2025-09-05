@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-// --- Initial State ---
+// Initial State
 const initialState = {
   pendingTasks: [],
   completedTasks: [],
@@ -10,7 +10,7 @@ const initialState = {
   inputValue: '',
 };
 
-// --- Reducer Function ---
+//Reducer Function
 function todoReducer(state, action) {
   switch (action.type) {
     case "SET_INPUT":
@@ -78,7 +78,7 @@ function todoReducer(state, action) {
   }
 }
 
-// --- Context Creation ---
+// Context Creation
 export const TodoContext = createContext();
 
 export function TodoProvider({ children }) {
