@@ -1,0 +1,55 @@
+/* minimal.css */
+
+/* reset */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+/* grid: 3 columns */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+/* card */
+.card {
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* color by type */
+.card.grass { background: #7fd45c; }  /* grass */
+.card.water { background: #7cc7ff; }  /* water */
+.card.fire  { background: #ff9aa2; }  /* fire  */
+
+/* sprite */
+.imgwrap {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.card img,
+.imgwrap img {
+  width: 48px !important;
+  height: 48px !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+/* name */
+.name {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: lowercase;
+  text-align: center;
+}
