@@ -12,7 +12,6 @@ import ToDoListStore from './components/toDoList/ToDoListStore.jsx'
 import TodoListRTK from './components/toDoList/TodoListRTK.jsx';
 import GameBoardC4 from './components/connect4/GameBoardC4.jsx';
 import Pokedex from './components/pokemon/Pokedex.jsx';
- 
 
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
     {/* <ToDoListStore/> */}
     {/* <TodoListRTK/> */}
     <GameBoardC4/>
-
     {/* <GameBoardC4/> */}
     <Pokedex/>
     </>
